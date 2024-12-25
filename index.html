@@ -29,14 +29,19 @@
                 <li class="item-list"><a class="item-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="item-list"><a class="item-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>            
-        </address>           
+        </address> 
+        <button class="burger-btn" type="button">
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-burger-icon"></use>
+            </svg>
+        </button>          
         </div>        
 
     </header>
 
     <!-- +++++++++++++ Hero ++++++++++ -->
     
-    <main class="main">
+    <main class="main hidden">
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -91,7 +96,7 @@
                 </div>
             </section>
             <!-- ###### About team #######-->
-        <section class="team">
+        <section class="team hidden">
             <div class="container container-team">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
@@ -250,7 +255,7 @@
         </section>
         
             <!-- +++++++++++++++ Portfolio +++++++++++++++-->
-        <section class="portfolio">
+        <section class="portfolio hidden">
             <div class="container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
@@ -335,7 +340,7 @@
     </main>
 
     <!-- +++++++++++++++ Footer +++++++++++++ -->
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="container footer-flex">
             <div class="footer-logo-main">
                 <a href="./index.html" class="logo footer-logo">Web<span class="logo-studio">Studio</span></a>
@@ -399,7 +404,7 @@
     </footer>
 
     <!-- MODAL -->
-    <div class="modal-overlay">
+    <div class="modal-overlay hidden">
         <div class="modal">
                 <!-- Button -->
                 <button type="button" class="modal-close">
