@@ -929,6 +929,7 @@ overflow: hidden;
 }
 
 .footer-logo{
+    padding: 0;
 margin-bottom: 16px;
 }
 
@@ -936,6 +937,19 @@ margin-bottom: 16px;
 background-color: #2e2f42;
 padding: 100px 0;
 }
+
+/* Help GPT */
+.container.footer-flex {
+    display: flex;  /* визначаємо, що це флекс-контейнер */
+    flex-direction: column;  /* елементи йдуть вертикально */
+    align-items: center;  /* вирівнює елементи по горизонталі */
+    justify-content: center;  /* вирівнює елементи по вертикалі */
+    text-align: center;  /* вирівнює текст всередині елементів */
+    /*gap: 20px;  /* додає відстань між елементами */
+    padding: 96px;  /* внутрішні відступи */
+}
+
+
 /*
 .footer-logo-main{
 margin-right: 120px;
