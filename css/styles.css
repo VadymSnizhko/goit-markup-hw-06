@@ -490,6 +490,7 @@ overflow: hidden;
 
 .vision-ul-list{
     margin-top: 96px;
+    margin-bottom: 96px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
