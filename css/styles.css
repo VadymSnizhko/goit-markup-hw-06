@@ -924,8 +924,11 @@ overflow: hidden;
 .footer-flex{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;*/
+    justify-content: center; 
+    align-items: center;    
+    text-align: center; 
+    padding: 96px 0; 
 }
 
 .footer-logo{
@@ -937,19 +940,6 @@ margin-bottom: 16px;
 background-color: #2e2f42;
 /*padding: 100px 0;*/
 }
-
-/* Help GPT */
-.container.footer-flex {
-    display: flex;  /* визначаємо, що це флекс-контейнер */
-    flex-direction: column;  /* елементи йдуть вертикально */
-    align-items: center;  /* вирівнює елементи по горизонталі */
-    justify-content: center;  /* вирівнює елементи по вертикалі */
-    text-align: center;  /* вирівнює текст всередині елементів */
-    /*gap: 20px;  /* додає відстань між елементами */
-    padding: 96px 0;  /* внутрішні відступи */
-}
-
-
 
 .footer-logo-main{
 margin-bottom: 72px;
@@ -1100,5 +1090,57 @@ fill: #FFFFFF;
 /*height: 24px;*/
 margin-left: 16px;
 }
+
+@media screen and (min-width: 768px) {
+    .footer-flex{
+        padding-left: 108px;
+        gap: 24px;
+        row-gap: 72px; 
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .footer-logo-main, .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .footer-text{
+        text-align: left;
+    }
+
+    /* GPT */
+
+    .open-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px; /* Відстань між елементами */
+    }
+    
+    .label {
+        margin: 0;
+    }
+    
+    .form-subscribe {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 24px; /* Відстань між input і кнопкою */
+    }
+    
+    .input {
+        width: 264px;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+
+}
+
 
 /* #endregion */
