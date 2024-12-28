@@ -1139,7 +1139,19 @@ margin-left: 16px;
 }
 
 @media screen and (min-width: 1158px) {
+    .container.footer-flex{
+        padding: 100px 0;
+        gap: 0;
+        width: 100%;
+    }
 
+    .footer-logo-main{
+        margin-right: 120px;
+    }
+
+    .social-media{
+        margin-right: 80px;
+    }
 }
 
 
